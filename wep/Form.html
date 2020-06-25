@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form method="POST"enctype="multipart/form-data"  action="http://localhost:3010/profile">
+        <fieldset>
+                <span>FirstName:</span>
+                <input type="text"  name="FirstName" >
+                <span>Last name:</span>
+                <input type="text" name="LastName" >
+                
+        <hr>
+        <input type="radio" name="MrOrMrs" value="Mr">Mr
+        <input type="radio" name="MrOrMrs" value="Mrs">Mrs
+        
+        <br>
+        <span>Company</span>
+        <input type="text" name="Company" >
+        <span>Title</span>
+        <input type="text" name="Title" >
+        <hr>
+        <span>Photo:</span>
+        <input type="file" name="photo">
+        <hr>
+        <h3>Phone Number</h3>
+        <span>Ph no:(Work)</span>
+        <input type="tel" name="Work_Phone">
+        <span>Ph no:(Home)</span>
+        <input type="tel" name="Home_Phone">
+        <hr>
+        <h3>Address</h3>
+        <span>Work address</span>
+        <input type="text" name="Work_address">
+        <span>Home address</span>
+        <input type="text" name="Home_address">
+        <hr>
+        <h3>Email</h3>
+        <span>Email:</span>
+        <input type="email" name="User_email">
+        <hr>
+            <button style="background: rgb(12, 223, 12);">Submit</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
